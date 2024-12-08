@@ -6,14 +6,15 @@ import sympy as sp
 import matplotlib.pyplot as plt 
 import math
 st.title("Funciones trigonometricas")
-st.markdown("""Las funciones trigonometricas son herramientas fundamentales en matematicas, especialmente en geometria y analisis, que relacionan los angulos de un triangulo rectangulo con las longitudes de sus lados. Estas funciones tambien se extienden mas alla de los triangulos, aplicandose a circulos y ondas, pero a continuacion te explico como funcionan en el caso de un triangulo rectangulo:""")
-st.image("https://cdn.goconqr.com/uploads/media/image/20749724/desktop_b01e6fd8-38a1-4983-99e3-149067e75e81.png")
+a1, a2 = st.columns(2)
+with a1:
+    st.markdown("""Las funciones trigonometricas son herramientas fundamentales en matematicas, especialmente en geometria y analisis, que relacionan los angulos de un triangulo rectangulo con las longitudes de sus lados. Estas funciones tambien se extienden mas alla de los triangulos, aplicandose a circulos y ondas, pero a continuacion te explico como funcionan en el caso de un triangulo rectangulo:""")
+with a2:
+   st.image("https://w7.pngwing.com/pngs/208/260/png-transparent-right-triangle-trigonometry-geometry-triangle-angle-text-rectangle.png")
+   h = sp.symbols("Hipotenusa")
+   cop = sp.symbols("Cateto opuesto")
+   cad = sp.symbols("Cateto adyacente")
 
-# variables del triangulo
-
-h = sp.symbols("Hipotenusa")
-cop = sp.symbols("Cateto opuesto")
-cad = sp.symbols("Cateto adyacente")
 
 
 #seno 
@@ -157,5 +158,14 @@ with c2:
     ax.axvline(0, color='black',linewidth=1)  
     st.pyplot(fig)
 
+st.divider()
+with st.expander("El 'Padre de las Funciones Trigonométricas' Hiparco de Nicea"):
+    st.markdown("""
+    El título de "padre de las funciones trigonométricas" generalmente se atribuye a Hiparco de Nicea (190 a.C. - 120 a.C.), un astrónomo y matemático griego que desarrolló el primer tabla trigonométrica para ayudar en la resolución de problemas astronómicos.
 
+    Hiparco utilizó las funciones trigonométricas en el contexto de los triángulos rectángulos. Aunque no usaba los términos modernos, desarrolló métodos para relacionar los ángulos con las longitudes de los lados de los triángulos. Este tipo de relaciones se convirtió en la base de lo que hoy conocemos como las funciones seno, coseno y tangente.
+
+    Hiparco fue también pionero en la construcción de tablas trigonométricas, las cuales servían para calcular los ángulos y lados de los triángulos en astronomía. Esto fue fundamental para el desarrollo posterior de la trigonometría.
+    """)
+    
 

@@ -77,3 +77,17 @@ st.markdown("""Estos límites son esenciales en el cálculo diferencial e integr
 
 En resumen, las identidades trigonométricas simplifican y transforman expresiones, mientras que los límites especiales son clave para el análisis del comportamiento de funciones trigonométricas en el cálculo.""")
 
+st.divider()
+with st.expander("Leonhard Euler (Funciones Trigonométricas e Identidades)"):
+    st.markdown("""
+    Leonhard Euler (1707-1783) fue uno de los matemáticos más prolíficos y fundamentales en el desarrollo de la matemática moderna. Con respecto a las funciones trigonométricas, Euler las abordó desde una perspectiva algebraica y analítica.
+
+    Euler introdujo las relaciones fundamentales entre las funciones trigonométricas y el número complejo. Su fórmula:
+    """)
+    st.latex(r"e^{ix} = cos(x) + isen(x)")
+    st.markdown("""
+    conocida como la fórmula de Euler, ha sido crucial para conectar las funciones trigonométricas con la teoría de números complejos, ampliando enormemente el campo de estudio de estas funciones.
+
+    En sus trabajos también ayudó a simplificar las identidades trigonométricas y las aplicaciones de estas funciones en ecuaciones diferenciales, lo que permitió el desarrollo de la transformada de Fourier.
+    
+    """)

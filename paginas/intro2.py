@@ -242,6 +242,20 @@ ax.axvline(0, color='black',linewidth=1)
 ax.set_ylim(-20, 20)
 st.pyplot(fig)
 
+st.divider()
+
+with st.expander(" Karl Weierstrass (Teoría de Límites y Continuidad)"):
+    st.markdown("""
+    Karl Weierstrass (1815-1897) fue un matemático alemán que desempeñó un papel crucial en el desarrollo del análisis real, especialmente en la formalización de conceptos como continuidad y derivadas. Aunque Cauchy fue fundamental para la formalización de las ideas de derivada y límite, Weierstrass proporcionó una mayor claridad y rigurosidad.
+
+    En sus estudios, Weierstrass introdujo el concepto de función continua pero no derivable, lo que amplió el campo de las funciones analíticas y ayudó a refinar las condiciones bajo las cuales las derivadas podrían ser aplicadas. Su trabajo proporcionó las bases para la comprensión de las funciones en términos de límites y continuidad, conceptos que son esenciales para las derivadas, especialmente cuando se aplican a funciones más complejas.
+    """)
+with st.expander(" Joseph Fourier (Series de Fourier y Aplicaciones Trigonométricas)"):
+    st.markdown("""
+    Jean-Baptiste Joseph Fourier (1768-1830) fue un matemático y físico francés conocido principalmente por desarrollar la transformada de Fourier, una herramienta que permite representar funciones periódicas como una suma infinita de funciones trigonométricas. Esta idea fue revolucionaria en el análisis de fenómenos periódicos, como el calor, y abrió el camino para el análisis de señales.
+
+    Fourier utilizó las funciones trigonométricas para descomponer funciones complicadas en componentes sinusoidales. Esta descomposición sigue siendo esencial en áreas como la ingeniería eléctrica, la física y las telecomunicaciones. Las series de Fourier son fundamentales para comprender cómo las derivadas pueden aplicarse a funciones periódicas.
+    """)
 
 
 

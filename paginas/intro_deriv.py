@@ -81,3 +81,20 @@ st.markdown("""
 Las derivadas son una herramienta muy importante en el calculo, y saber como derivar funciones usando las reglas basicas es fundamental para entender como cambian las funciones. 
 Con las reglas de la constante, la suma, el producto, el cociente puedes derivar muchas funciones de manera rapida y sencilla.
 """)
+
+st.divider()
+
+with st.expander(" Isaac Newton y Gottfried Wilhelm Leibniz (Fundadores del Cálculo Diferencial)"):
+    st.markdown("""
+    Isaac Newton (1642-1727) y Gottfried Wilhelm Leibniz (1646-1716) son los dos matemáticos más reconocidos como los fundadores del cálculo. Aunque sus métodos eran diferentes, ambos llegaron a los mismos resultados fundamentales. El cálculo diferencial se ocupa de la tasa de cambio y las derivadas, conceptos que ambos desarrollaron en paralelo durante la misma época.
+
+    Newton lo desarrolló inicialmente como parte de su estudio de las fuerzas y el movimiento en la física, utilizando el concepto de "fluxiones" para describir las tasas de cambio. Él usó la derivada para modelar cómo los cuerpos se mueven bajo la influencia de fuerzas.
+
+    Leibniz, por otro lado, desarrolló un sistema de notación más moderno y accesible, que se utiliza hasta el día de hoy. Introdujo el símbolo d/dx para la derivada, lo que facilitó enormemente los cálculos y la enseñanza del cálculo. También fue quien formuló las reglas de diferenciación en términos más claros.
+    """)
+with st.expander(" Augustin-Louis Cauchy (Formalización de la Derivada)"):
+    st.markdown("""
+    Augustin-Louis Cauchy (1789-1857) fue un matemático francés que hizo una gran contribución a la formalización de la teoría de límites y la definición rigurosa de la derivada. Aunque el concepto de derivada ya existía gracias a Newton y Leibniz, Cauchy fue quien lo formalizó matemáticamente para garantizar una mayor comprensión y consistencia dentro del análisis matemático.
+
+    En su obra Cours d'Analyse (1821), Cauchy introdujo la definición de la derivada como el límite de la razón de cambio de una función, una base que permitió que el cálculo se formalizara y se utilizara más allá de la geometría o la física. Cauchy también trabajó en la teoría de series infinitas y funciones analíticas, que son esenciales para el análisis de derivadas de funciones más complejas.
+    """)
