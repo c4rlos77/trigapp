@@ -52,7 +52,7 @@ pre3 = st.radio(
 
 #4
 st.subheader("4. Deriva la siguiente funcion: ")
-st.latex(r"f(x) = e^sen(x)")
+st.latex(r"f(x) = e^{sen(x)}")
 opciones4 = {
      "1": r"f'(x) = cos(x)e^sen(x)",
     "2": r"f'(x) = sen(x)e^cos(x)",
@@ -153,12 +153,9 @@ if st.button("Verificar"):
     else:
         mal.append("Pregunta 5")
     if k < 5:
-        st.markdown(f"""
-        Tu puntuacion fue de {k}/5
-        Las que te quedaron mal fueron: {mal}
-        """)
+        st.error(f"Tu puntuación fue: {k}/5, animo animo, sigue intentando las veces que sean necesarias, tu puedes 🥳🥳🥳")
     else:
-        st.markdown("Felicidades, sigue asi,")
+        st.success("¡Felicidades! 🎉 eres muy pro, ¡¡vas por ese 5!! 🥳🥳🥳")
 
 
 

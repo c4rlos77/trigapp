@@ -31,7 +31,7 @@ with a2:
     fig, ax = plt.subplots(figsize=(8, 4))
     fig.set_facecolor('#edeccd')  
     ax.set_facecolor('#ffffff')  
-    ax.plot(x, y, color='red')
+    ax.plot(x, y, color='#25792b')
    
     ax.set_xlabel('x')
     ax.set_ylabel('y')
@@ -54,7 +54,7 @@ with c2:
     fig, ax = plt.subplots(figsize=(8, 4))
     fig.set_facecolor('#edeccd')  
     ax.set_facecolor('#ffffff')  
-    ax.plot(x, y, color='red')
+    ax.plot(x, y, color='#25792b')
    
     ax.set_xlabel('x')
     ax.set_ylabel('y')
@@ -78,7 +78,7 @@ with c2:
     fig, ax = plt.subplots(figsize=(8, 4))
     fig.set_facecolor('#edeccd')  
     ax.set_facecolor('#ffffff')  
-    ax.plot(x, y, color='red')
+    ax.plot(x, y, color='#25792b')
    
     ax.set_xlabel('x')
     ax.set_ylabel('y')
@@ -101,7 +101,7 @@ with c2:
     fig, ax = plt.subplots(figsize=(8, 4))
     fig.set_facecolor('#edeccd')  
     ax.set_facecolor('#ffffff')  
-    ax.plot(x, y, color='red')
+    ax.plot(x, y, color='#25792b')
    
     ax.set_xlabel('x')
     ax.set_ylabel('y')
@@ -125,7 +125,7 @@ with c2:
     fig, ax = plt.subplots(figsize=(8, 4))
     fig.set_facecolor('#edeccd')  
     ax.set_facecolor('#ffffff')  
-    ax.plot(x, y, color='red')
+    ax.plot(x, y, color='#25792b')
    
     ax.set_xlabel('x')
     ax.set_ylabel('y')
@@ -148,7 +148,7 @@ with c2:
     fig, ax = plt.subplots(figsize=(8, 4))
     fig.set_facecolor('#edeccd')  
     ax.set_facecolor('#ffffff')  
-    ax.plot(x, y, color='red')
+    ax.plot(x, y, color='#25792b')
    
     ax.set_xlabel('x')
     ax.set_ylabel('y')

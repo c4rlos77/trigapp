@@ -9,7 +9,7 @@ intro_deriv = st.Page("paginas/intro_deriv.py", title="Introducción a las Deriv
 derivadastrig = st.Page("paginas/intro2.py", title="Derivadas Trigonométricas", icon="🧮")
 ejercicios = st.Page('paginas/inter.py', title='Ejercicios Prácticos', icon="✍️")
 
-quiz = st.Page("paginas/quiz.py", title="Evalúa tu Conocimiento", icon="📝")
+quiz = st.Page("paginas/quiz.py", title="Evalúa lo aprendido", icon="📝")
 
 presentacion = st.Page("paginas/presentacion.py", title="Sobre Mí", icon="👤")
 

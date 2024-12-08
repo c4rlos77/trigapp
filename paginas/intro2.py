@@ -30,11 +30,13 @@ st.write(f"Para x = {angulo} grados, la derivada es aproximadamente: cos({angulo
 #grafica del deslizador 
 x = np.linspace(0, 2*np.pi, 100)
 y = np.cos(x)
+z = np.sin(x)
 
 fig, ax = plt.subplots(figsize=(8, 4))
 fig.set_facecolor('#edeccd')  
 ax.set_facecolor('#ffffff')
-ax.plot(x, y, label='y = math.cos(math.radians(angulo))', color='#25792b')
+ax.plot(x, y, label="f'(x)", color='#25792b')
+ax.plot(x, z, label='f(x)', color='#8361e2', linestyle="--")
 ax.scatter([math.radians(angulo)], [math.cos(math.radians(angulo))])
 
 ax.set_xlabel('x')
@@ -43,6 +45,8 @@ ax.set_title('Derivada del Seno')
 ax.grid(True)
 ax.axhline(0, color='black',linewidth=1)  
 ax.axvline(0, color='black',linewidth=1)  
+ax.legend()
+ax.grid()
 st.pyplot(fig)
 
 
@@ -67,9 +71,11 @@ st.write(f"Para x = {angulo} grados, la derivada es aproximadamente: -sen({angul
 
 x = np.linspace(0, 2*np.pi, 100)
 y = -np.sin(x)
+z = np.cos(x)
 
 fig, ax = plt.subplots(figsize=(8, 4))
-ax.plot(x, y, label='y = -np.sin(x)', color='#25792b')
+ax.plot(x, y, label="f'(x)", color='#25792b')
+ax.plot(x, z, label='f(x)', color='#8361e2', linestyle="--")
 fig.set_facecolor('#edeccd')  
 ax.set_facecolor('#ffffff')
 ax.scatter([math.radians(angulo)], [-np.sin(math.radians(angulo))])
@@ -80,6 +86,8 @@ ax.set_title('Derivada del coseno ')
 ax.grid(True)
 ax.axhline(0, color='black',linewidth=1)  
 ax.axvline(0, color='black',linewidth=1)  
+ax.legend()
+ax.grid()
 st.pyplot(fig)
 ######
 st.divider()
@@ -110,11 +118,14 @@ st.write(f"Para x = {angulo} grados, la derivada es aproximadamente: sec^2({angu
 x = np.linspace(0, 6, 500)
 y = (1/np.cos(x))**2
 y[np.abs(y) > 200] = np.nan  
+z = np.sin(x)/np.cos(x)
+z[np.abs(z) > 200] = np.nan  
 
 fig, ax = plt.subplots(figsize=(8, 4))
 fig.set_facecolor('#edeccd')  
 ax.set_facecolor('#ffffff')
-ax.plot(x, y, label='y = (1/np.cos(x))**2', color='#25792b')
+ax.plot(x, y, label="f'(x)", color='#25792b')
+ax.plot(x, z, label='f(x)', color='#8361e2', linestyle="--")
 ax.scatter([math.radians(angulo)], [(1/np.cos(math.radians(angulo)))**2])
 
 ax.set_xlabel('x')
@@ -124,6 +135,8 @@ ax.grid(True)
 ax.axhline(0, color='black',linewidth=1)  
 ax.axvline(0, color='black',linewidth=1)  
 ax.set_ylim(-1, 50)
+ax.legend()
+ax.grid()
 st.pyplot(fig)
 
 # cotangente
@@ -150,11 +163,14 @@ st.write(f"Para x = {angulo} grados, la derivada es aproximadamente: -csc^2({ang
 x = np.linspace(-6, 6, 500)
 y = (1/-np.sin(x))**2
 y[np.abs(y) > 200] = np.nan  
+z = np.cos(x)/np.sin(x)
+z[np.abs(z) > 200] = np.nan  
 
 fig, ax = plt.subplots(figsize=(8, 4))
 fig.set_facecolor('#edeccd')  
 ax.set_facecolor('#ffffff')
-ax.plot(x, y, label='y = (1/np.cos(x))**2', color='#25792b')
+ax.plot(x, y, label="f'(x)", color='#25792b')
+ax.plot(x, z, label='f(x)', color='#8361e2', linestyle="--")
 ax.scatter([math.radians(angulo)], [(1/-np.sin(math.radians(angulo)))**2])
 
 ax.set_xlabel('x')
@@ -164,6 +180,8 @@ ax.grid(True)
 ax.axhline(0, color='black',linewidth=1)  
 ax.axvline(0, color='black',linewidth=1) 
 ax.set_ylim(-1, 20) 
+ax.legend()
+ax.grid()
 st.pyplot(fig)
 
 
@@ -189,11 +207,14 @@ st.write(f"Para x = {angulo} grados, la derivada es aproximadamente: sec({angulo
 x = np.linspace(-6, 6, 500)
 y = np.sin(x)/(np.cos(x)**2)
 y[np.abs(y) > 200] = np.nan  
+z = 1/np.cos(x)
+z[np.abs(z) >80] = np.nan  
 
 fig, ax = plt.subplots(figsize=(8, 4))
 fig.set_facecolor('#edeccd')  
 ax.set_facecolor('#ffffff')
-ax.plot(x, y, label='y = np.sin(x)/(np.cos(x)**2)', color='#25792b')
+ax.plot(x, y, label="f'(x)", color='#25792b')
+ax.plot(x, z, label='f(x)', color='#8361e2', linestyle="--")
 ax.scatter([math.radians(angulo)], [np.sin(math.radians(angulo))/(np.cos(math.radians(angulo))**2)])
 
 ax.set_xlabel('x')
@@ -203,6 +224,8 @@ ax.grid(True)
 ax.axhline(0, color='black',linewidth=1)  
 ax.axvline(0, color='black',linewidth=1)  
 ax.set_ylim(-20, 20)
+ax.legend()
+ax.grid()
 st.pyplot(fig)
 
 # csc
@@ -226,11 +249,14 @@ st.write(f"Para x = {angulo} grados, la derivada es aproximadamente: -csc({angul
 x = np.linspace(-0.5, 4, 500)
 y = (1/-np.cos(x))*(np.cos(x)/(np.sin(x)))
 y[np.abs(y) > 40] = np.nan  
+z = 1/np.sin(x)
+z[np.abs(z) > 40] = np.nan  
 
 fig, ax = plt.subplots(figsize=(8, 4))
 fig.set_facecolor('#edeccd')  
 ax.set_facecolor('#ffffff')
-ax.plot(x, y, color='#25792b')
+ax.plot(x, y, label="f'(x)", color='#25792b')
+ax.plot(x, z, label='f(x)', color='#8361e2', linestyle="--")
 ax.scatter([math.radians(angulo)], [(1/-np.cos(math.radians(angulo)))*(np.cos(math.radians(angulo))/np.sin(math.radians(angulo)))])
 
 ax.set_xlabel('x')
@@ -240,6 +266,8 @@ ax.grid(True)
 ax.axhline(0, color='black',linewidth=1)  
 ax.axvline(0, color='black',linewidth=1)  
 ax.set_ylim(-20, 20)
+ax.legend()
+ax.grid()
 st.pyplot(fig)
 
 st.divider()
