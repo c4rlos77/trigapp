@@ -21,9 +21,9 @@ st.subheader("Ejercicio 1: Derivada de una funcion trigonometrica")
 st.latex(r"f(x) = sin(x) + cos(x)")
 
 opciones = {
-    "1": r"f'(x) = cos(x) - sin(x)",
-    "2": r"f'(x) = cos(x) + sin(x)",
-    "3": r"f'(x) = sin(x) - cos(x)"
+    "1": r"$f'(x) = cos(x) - sen(x)$",
+    "2": r"$f'(x) = cos(x) + sen(x)$",
+    "3": r"$f'(x) = sen(x) - cos(x)$"
 }
 answer = "1"
 
@@ -70,9 +70,9 @@ st.subheader("Ejercicio 3: Deriva esta funcion tu mismo")
 st.latex(r"f(x) = tan(x) + sec(x)")
  
 opciones = {
-    "1": r"f'(x) = sec^2(x)+sec(x)tan(x)",
-    "2": r"f'(x) = sec^2(x)+sec(x)",
-    "3": r"f'(x) = sec^2(x)−sec(x)tan(x)"
+    "1": r"$f'(x) = sec^2(x) + sec(x)tan(x)$",
+    "2": r"$f'(x) = sec^2(x) + sec(x)$",
+    "3": r"$f'(x) = sec^2(x) - sec(x)tan(x)$"
 }
 
 answer = "3"
@@ -92,9 +92,9 @@ st.subheader("Ejercicio 4: Deriva esta funcion con un angulo todo rarito^^")
 st.latex(r"f(x) = sen(3x^2)")
 
 opciones = {
-    "1": r"f'(x) = cos(3x^2)",
-    "2": r"f'(x) = cos(6x)",
-    "3": r"f'(x) = cos(3x^2)*6x"
+    "1": r"$f'(x) = cos(3x^2)$",
+    "2": r"$f'(x) = cos(6x)$",
+    "3": r"$f'(x) = cos(3x^2)6x$"
 }
 
 answer = "3"
@@ -114,9 +114,9 @@ st.subheader("Ejercicio 5: Excelente, vas muy bien, ahora que tal este ¡CHALLEN
 st.latex(r"f(x) = e^{sen(cos(3x^2)})")
 
 answ = {
-    "1": r"f'(x)= 6x*e^(sen(cos(3x^2))*cos(cos(3x^2)*sen(3x^2)))",
-    "2": r"f'(x)= -6x*cos(cos(3x^2)*sen(3x^2))",
-    "3": r"f'(x)= -6x*e^(sen(cos(3x^2))*cos(cos(3x^2)*sen(3x^2))) "
+    "1": r"$f'(x) = 6x \cdot e^{\sin(\cos(3x^2))}cos(cos(3x^2)sen(3x^2))$",
+    "2": r"$f'(x) = -6x \cos(\cos(3x^2) \sin(3x^2))$",
+    "3": r"$f'(x) = -6x \cdot e^{\sin(\cos(3x^2))}cos(cos(3x^2)sen(3x^2))$"
 }
 
 rt = "3"

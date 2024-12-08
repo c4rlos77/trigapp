@@ -13,9 +13,9 @@ st.markdown("")
 st.subheader("1. Deriva la siguiente expresion: ")
 st.latex(r"f(x) = tan(x) - sen(x)")
 opciones1 = {
-    "1": r"f'(x) = sec^2(x) - cos(x)",
-    "2": r"f'(x) = sec^2(x) + cos(x)",
-    "3": r"f'(x) = sen(x) - cos(x)"
+    "1": f"$f'(x) = sec^2(x) - cos(x)$",
+    "2": f"$f'(x) = sec^2(x) + cos(x)$",
+    "3": f"$f'(x) = sen(x) - cos(x)$"
 }
 pre1 = st.radio(
     "¿Cual es la derivada correcta?",
@@ -26,9 +26,9 @@ pre1 = st.radio(
 #2
 st.subheader("2. ¿La funcion f'(x) = sen(X) en que puntos es igual a 0? ")
 opciones2 = {
-    "1": r"x = n*pi, con n en Z",
-    "2": r"x = pi/2 + n\pi, con n en Z ",
-    "3": r"x = 2n/pi, con n en Z"
+    "1": r"$x = n\pi, \text{ con } n \in \mathbb{Z}$",
+    "2": r"$x = \frac{\pi}{2} + n\pi, \text{ con } n \in \mathbb{Z}$",
+    "3": r"$x = \frac{2n}{\pi}, \text{ con } n \in \mathbb{Z}$"
 }
 pre2 = st.radio(
     "¿Cuales son los puntos? Recuerda que la funcion sen(x) es ciclica",
@@ -40,9 +40,9 @@ pre2 = st.radio(
 st.subheader("3. Deriva la siguiente funcion: ")
 st.latex(r"f(x) = tan(sen(7x^3))")
 opciones3 = {
-    "1": "f'(x) = 21x^2sec^2(sen(7x^3))cos(7x^3)",
-    "2": "f'(x) = 21x^2sec^2(7x^3)cos(sen(7x^3))",
-    "3": "f'(x) = 21x^2sec^2(sen(7x^3))7x^2cos(7x^3)"
+    "1": r"$f'(x) = 21x^2 sec^2(sen(7x^3))cos(7x^3)$",
+    "2": r"$f'(x) = 21x^2 sec^2(7x^3)cos(sen(7x^3))$",
+    "3": r"$f'(x) = 21x^2 sec^2(sen(7x^3)) 7x^2 cos(7x^3)$"
 }
 pre3 = st.radio(
     "¿Cual es la derivada correcta?",
@@ -54,9 +54,9 @@ pre3 = st.radio(
 st.subheader("4. Deriva la siguiente funcion: ")
 st.latex(r"f(x) = e^{sen(x)}")
 opciones4 = {
-     "1": r"f'(x) = cos(x)e^sen(x)",
-    "2": r"f'(x) = sen(x)e^cos(x)",
-    "3": r"f'(x) = sen(x)e^sen(x)"
+    "1": r"$f'(x) = cos(x)e^{sen(x)}$",
+    "2": r"$f'(x) = sen(x)e^{cos(x)}$",
+    "3": r"$f'(x) = sen(x)e^{sen(x)}$"
 }
 pre4 = st.radio(
     "¿Cual es la derivada correcta?",
@@ -155,7 +155,7 @@ if st.button("Verificar"):
     if k < 5:
         st.error(f"Tu puntuación fue: {k}/5, animo animo, sigue intentando las veces que sean necesarias, tu puedes 🥳🥳🥳")
     else:
-        st.success("¡Felicidades! 🎉 eres muy pro, ¡¡vas por ese 5!! 🥳🥳🥳")
+        st.success("¡Felicidades! 🎉 eres muy pro, vas por ese 5!! 🥳🥳🥳")
 
 
 
