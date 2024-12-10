@@ -16,6 +16,8 @@ with st.expander("Identidades Trigonométricas"):
     st.latex(r"sec(x) = \frac{1}{cos(x)}")
     st.latex(r"csc(x) = \frac{1}{sen(x)}")
     st.latex(r"sen^2(x) + cos^2(x) = 1")
+    st.latex(r"sen(A \pm B) = sen(A) \cdot cos(B) \pm cos(A) \cdot sen(B)")
+    st.latex(r"cos(A \pm B) = cos(A) \cdot cos(B) \mp sen(A) \cdot sen(B)")
 
 
 st.title("Limites especiales trigonometricos")
